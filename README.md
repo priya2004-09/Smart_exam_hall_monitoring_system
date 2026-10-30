@@ -10,7 +10,8 @@ To automate and manage examination timing through an LPC2148-based embedded syst
 . LPC2148 ARM7 Microcontroller                                                                      . 16×2 LCD                                                                                         . 4×4 Matrix Keypad                                                                                . RTC                                                                                               . LM35 Temperature Sensor                                                                           . Two 7-Segment Displays                                                                            . Green, Yellow & Red LEDs                                                                          . Buzzer                                                                                            . Switches                                                                                          . USB-UART / DB-9 Interface                                                                         . 5V DC Power Supply
 # System Block Diagram
 <img width="2089" height="1229" alt="image" src="https://github.com/user-attachments/assets/c3e70a7b-7efd-4591-858b-e1ee79075d36" />                                         
-## Pin Configuration
+
+# Pin Configuration
 
 | Signal | Pin | Description |
 |:---|:---|:---|
@@ -27,6 +28,9 @@ To automate and manage examination timing through an LPC2148-based embedded syst
 
 # System Architecture
 The firmware is organized into modular source and header files, with each module handling a specific system function.
+## Project File Structure
+
+```text
 ├── main_pro.c               # Main program and system initialization
 ├── interrupt_p.c/h          # External interrupt handling
 ├── rtc_mpt.c/h              # RTC initialization and operation
@@ -44,6 +48,7 @@ The firmware is organized into modular source and header files, with each module
 ├── delay.c/h                # Delay routines
 ├── types_t.h                # Type definitions
 └── defines.h                # Common bit definitions and macros
+```
 
 # System Working
 
