@@ -28,7 +28,6 @@ To automate and manage examination timing through an LPC2148-based embedded syst
 
 # System Architecture
 The firmware is organized into modular source and header files, with each module handling a specific system function.
-## Project File Structure
 
 ```text
 ├── main_pro.c               # Main program and system initialization
