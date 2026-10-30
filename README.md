@@ -11,40 +11,40 @@ To automate and manage examination timing through an LPC2148-based embedded syst
 # System Block Diagram
 <img width="2089" height="1229" alt="image" src="https://github.com/user-attachments/assets/c3e70a7b-7efd-4591-858b-e1ee79075d36" />                                         
 # Pin Configuration
-__________________________________________________________________________
-|    Signal	      |          Pin	         |        Description          |
-__________________________________________________________________________
-|   LCD Data	     |     P0.8 – P0.15	     |        8-bit data           |
-|   LCD RS / EN	  |     P0.16 / P0.17	    |        LCD control          |
-|   Keypad	       |     P1.16 – P1.23	    |        4×4 key input        |
-| 7-Segment Data	 |     P1.24 – P1.31	    |        Segment data         |
-| 7-Segment Select|     P0.20 / P0.21	    |      Digit 1 / Digit 2      |
-|   Status LEDs	  |  P0.2 / P0.3 / P0.4	  |     Green / Yellow / Red    |
-|    Pause LED	   |         P0.25	        |       Pause indication      |
-|      Buzzer	    |         P0.23	        |       Final-stage alert     |
-|       LM35	     |         P0.28	        |       Temperature input     |
+____________________________________________________________________________
+|    Signal	      |          Pin	            |        Description          |
+____________________________________________________________________________
+|   LCD Data	     |     P0.8 – P0.15	      |        8-bit data           |
+|   LCD RS / EN	  |     P0.16 / P0.17	   |        LCD control          |
+|   Keypad	        |     P1.16 – P1.23	   |        4×4 key input        |
+| 7-Segment Data	  |     P1.24 – P1.31	   |        Segment data         |
+| 7-Segment Select  |     P0.20 / P0.21	   |      Digit 1 / Digit 2      |
+|   Status LEDs	  |  P0.2 / P0.3 / P0.4	   |     Green / Yellow / Red    |
+|    Pause LED	     |         P0.25	         |       Pause indication      |
+|      Buzzer	     |         P0.23	         |       Final-stage alert     |
+|       LM35	     |         P0.28	         |       Temperature input     |
 |    Interrupts	  |        P0.1 / P0.7	   |      Admin / Pause-Resume   |
-__________________________________________________________________________
+___________________________________________________________________________
 
 # System Architecture
 The firmware is organized into modular source and header files, with each module handling a specific system function.
-├── main_pro.c               Main program and system initialization
-├── interrupt_p.c/h          External interrupt handling
-├── rtc_mpt.c/h              RTC initialization and operation
-├── rtc_edit.c               RTC configuration
-├── kpm_mp.c/h               4×4 keypad scanning and input handling
-├── lcd_t.c/h                LCD driver
-├── lcd_defines_t.h          LCD definitions
-├── adc_mpt.c/h              ADC driver
-├── adc_defines_mpt.h        ADC definitions
-├── lm35_mpt.c/h             LM35 temperature measurement
-├── led_mpt.c/h              LED status control
-├── buzzer_mpt.c/h           Buzzer control
-├── 7seg_mpt.c/h             Multiplexed 7-segment display
-├── timer.c/h                Countdown timer control
-├── delay.c/h                Delay routines
-├── types_t.h                Type definitions
-└── defines.h                Common bit definitions and macros
+├── main_pro.c               # Main program and system initialization
+├── interrupt_p.c/h          # External interrupt handling
+├── rtc_mpt.c/h              # RTC initialization and operation
+├── rtc_edit.c               # RTC configuration
+├── kpm_mp.c/h               # 4×4 keypad scanning and input handling
+├── lcd_t.c/h                # LCD driver
+├── lcd_defines_t.h          # LCD definitions
+├── adc_mpt.c/h              # ADC driver
+├── adc_defines_mpt.h        # ADC definitions
+├── lm35_mpt.c/h             # LM35 temperature measurement
+├── led_mpt.c/h              # LED status control
+├── buzzer_mpt.c/h           # Buzzer control
+├── 7seg_mpt.c/h             # Multiplexed 7-segment display
+├── timer.c/h                # Countdown timer control
+├── delay.c/h                # Delay routines
+├── types_t.h                # Type definitions
+└── defines.h                # Common bit definitions and macros
 
 # System Working
 
