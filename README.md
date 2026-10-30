@@ -10,7 +10,7 @@ To automate and manage examination timing through an LPC2148-based embedded syst
 . LPC2148 ARM7 Microcontroller                                                                      . 16×2 LCD                                                                                         . 4×4 Matrix Keypad                                                                                . RTC                                                                                               . LM35 Temperature Sensor                                                                           . Two 7-Segment Displays                                                                            . Green, Yellow & Red LEDs                                                                          . Buzzer                                                                                            . Switches                                                                                          . USB-UART / DB-9 Interface                                                                         . 5V DC Power Supply
 # System Block Diagram
 <img width="2089" height="1229" alt="image" src="https://github.com/user-attachments/assets/c3e70a7b-7efd-4591-858b-e1ee79075d36" />                                         
-# Pin Configuration
+## Pin Configuration
 
 | Signal | Pin | Description |
 |:---|:---|:---|
