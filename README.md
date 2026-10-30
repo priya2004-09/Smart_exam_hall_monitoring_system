@@ -25,7 +25,8 @@ __________________________________________________________________________
 |       LM35	     |         P0.28	        |       Temperature input     |
 |    Interrupts	  |        P0.1 / P0.7	   |      Admin / Pause-Resume   |
 __________________________________________________________________________
- # System Architecture
+
+# System Architecture
 The firmware is organized into modular source and header files, with each module handling a specific system function.
 ├── main_pro.c               Main program and system initialization
 ├── interrupt_p.c/h          External interrupt handling
@@ -44,7 +45,9 @@ The firmware is organized into modular source and header files, with each module
 ├── delay.c/h                Delay routines
 ├── types_t.h                Type definitions
 └── defines.h                Common bit definitions and macros
+
 # System Working
+
 1. System Initialization
 After power ON, the LPC2148 ARM7 microcontroller, which acts as the main controller initializes the required peripherals such as LCD, RTC, keypad, ADC, timer, 7-segment display, LEDs, buzzer, and external interrupts.
 
@@ -79,6 +82,7 @@ When the countdown reaches zero, the LEDs and buzzer are turned OFF and the exam
 This provides a clear visual and audible indication of the remaining examination time.
 
 # Project Workflow
+
 The basic project flow is:
 
 Power ON
@@ -119,6 +123,7 @@ Password Correct?
        Buzzer & LEDs OFF
               ↓
        Examination Complete
+
 # Development Tools & Environment
 . Microcontroller: LPC2148 ARM7
 . Programming Language: Embedded C
